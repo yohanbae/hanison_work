@@ -36,3 +36,14 @@
     transform: rotate(360deg);
   }
 }
+
+@font-face {
+  font-family: 'Cafe';
+  src: url('./font/Cafe24Oneprettynight.ttf');
+}
+
+.active {
+  border-bottom: 1px solid #333;
+}
+
+
