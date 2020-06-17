@@ -28,11 +28,16 @@ const DownSide = styled.div`
     grid-template-columns: 20% 80%;
     padding:0 15%;
     font-family: 'Cafe';
-
+    @media only screen and (max-width: 600px) {
+        grid-template-columns: 1fr;        
+    }
 `;
 
 const Navigation = styled.div`
     position:relative;
+    @media only screen and (max-width: 600px) {
+        display:none;
+    }
 `;
 
 const Menu = styled.ul`
@@ -45,23 +50,26 @@ const Li = styled.li`
     list-style:none;
     margin:0; padding:0;
     margin-bottom:20px;
+    cursor: pointer;
 `;
 
 const Content = styled.div`
     margin-top:40px;
+    @media only screen and (max-width: 600px) {
+        padding-right:15%;
+    }
 `;
 
 const Main = () => {
-    const hoho = () => {
-        console.log('cliecked');
-        scroll.scrollToTop();
+    const onResume = () => {
+        window.open('https://sweb-weights.netlify.app/resume_YohanBae.pdf');
     }
 
     return(
         <>
         <Header>
             <span>Yohan Bae</span>
-            <Resume><FaDownload style={{fontSize:'12px', marginRight:'10px'}} /> Resume</Resume>
+            <Resume onClick={() => onResume()}><FaDownload style={{fontSize:'12px', marginRight:'10px'}} /> Resume</Resume>
         </Header>
         <DownSide>
             <Navigation>
