@@ -1,21 +1,9 @@
 import React from "react";
 import styled from "styled-components";
 
-import Smileland from "./Port/Smileland";
-import SmilelandMobile from "./Port/SmilelandMobile";
-import Promise from "./Port/Promise";
-import Prayer from "./Port/Prayer";
-import Sodasu from "./Port/Sodasu";
-
 import Baby from "../assets/image/buritto.png";
+import PortComponent from "./Port/PortComponent";
 
-
-// const Title = styled.div`
-//     text-align:left;
-//     font-size:20px;
-//     margin-top:100px;
-//     margin-bottom:50px;
-// `;
 
 const TitleWrap = styled.div`
     display:grid;
@@ -41,6 +29,61 @@ const Img = styled.img`
 
 
 const Portfolio = () => {
+    const smilelandData = {
+        title: "SMILE LAND",
+        titleImage: "smilelandtitle.png",
+        description: "This is a web-application is new version of Gentle Week. This helps you manage your weekly schedule in the most effective way. Easy to manage your weekly task and easy to see daily achievements. You will be able to enhance your lifestyle through this application.",
+        languages: ["HTML","CSS","REACT" ,"JS","FIREBASE","ILLUSTRATOR"],
+        links:[
+            {name: "VISIT WEBSITE", link: "https://sweb.netlify.app/"},
+            {name: "GITHUB", link: "https://github.com/yohanbae/sweb"},
+        ]
+    };
+    
+    const smilelandMobileData = {
+        title: "SMILE LAND MOBILE",
+        titleImage: "smilelandmobile1.png",
+        description: "This is a web-application is new version of Gentle Week. This helps you manage your weekly schedule in the most effective way. Easy to manage your weekly task and easy to see daily achievements. You will be able to enhance your lifestyle through this application.",
+        languages: ["HTML","CSS","REACT NATIVE with EXPO","FIREBASE"],
+        links:[
+            {name: "DOWNLOAD APK", link: "https://github.com/yohanbae/smileland_mobile"},
+            {name: "GITHUB", link: "https://github.com/yohanbae/smileland_mobile"},
+        ]
+    };
+
+    const sodasuData = {
+        title: "SODASU",
+        titleImage: "sodasutitle.png",
+        description: "This is a web-application is new version of Gentle Week. This helps you manage your weekly schedule in the most effective way. Easy to manage your weekly task and easy to see daily achievements. You will be able to enhance your lifestyle through this application.",
+        languages: ["HTML","CSS","REACT JS","FIREBASE"],
+        links:[
+            {name: "VISIT WEBSITE", link: "https://sodasu.netlify.app/"},
+            {name: "GITHUB", link: "https://github.com/yohanbae/sodasu"},
+        ]
+    };    
+
+    const promiseData = {
+        title: "SODASU",
+        titleImage: "promisetitle.png",
+        description: "This is a web-application is new version of Gentle Week. This helps you manage your weekly schedule in the most effective way. Easy to manage your weekly task and easy to see daily achievements. You will be able to enhance your lifestyle through this application.",
+        languages: ["HTML","CSS","REACT JS","FIREBASE"],
+        links:[
+            {name: "VISIT WEBSITE", link: "https://promisehani.netlify.app/"},
+            {name: "GITHUB", link: "https://github.com/yohanbae/reactpromise"},
+            {name: "DOWNLOAD APK", link: "https://github.com/yohanbae/reactpromise"},
+            {name: "MOBILE GITHUB", link: "https://github.com/yohanbae/promise_mobile"}            
+        ]
+    };        
+
+    const sonmoaData = {
+        title: "SONMOA",
+        titleImage: "sonmoa.png",
+        description: "This is a web-application is new version of Gentle Week. This helps you manage your weekly schedule in the most effective way. Easy to manage your weekly task and easy to see daily achievements. You will be able to enhance your lifestyle through this application.",
+        languages: ["HTML","CSS","IONIC","FIREBASE"],
+        links:[
+            {name: "GITHUB", link: "https://github.com/yohanbae/sonmoa"},
+        ]
+    };        
 
     return (
         <>
@@ -48,11 +91,41 @@ const Portfolio = () => {
             <Img src={Baby} />
             <Title>PORTFOLIOS</Title>
         </TitleWrap>
-        <Smileland />
-        <SmilelandMobile />
-        <Sodasu />
-        <Promise />
-        <Prayer />
+        <PortComponent 
+            title = {smilelandData.title}
+            titleImage = {smilelandData.titleImage}
+            description = {smilelandData.description}
+            languages = {smilelandData.languages}
+            links = {smilelandData.links}
+        />
+        <PortComponent 
+            title = {smilelandMobileData.title}
+            titleImage = {smilelandMobileData.titleImage}
+            description = {smilelandMobileData.description}
+            languages = {smilelandMobileData.languages}
+            links = {smilelandMobileData.links}
+        />
+        <PortComponent 
+            title = {sodasuData.title}
+            titleImage = {sodasuData.titleImage}
+            description = {sodasuData.description}
+            languages = {sodasuData.languages}
+            links = {sodasuData.links}
+        />        
+        <PortComponent 
+            title = {promiseData.title}
+            titleImage = {promiseData.titleImage}
+            description = {promiseData.description}
+            languages = {promiseData.languages}
+            links = {promiseData.links}
+        />   
+        <PortComponent 
+            title = {sonmoaData.title}
+            titleImage = {sonmoaData.titleImage}
+            description = {sonmoaData.description}
+            languages = {sonmoaData.languages}
+            links = {sonmoaData.links}
+        />   
         </>
     )
 }
