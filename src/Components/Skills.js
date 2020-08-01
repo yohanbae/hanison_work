@@ -52,7 +52,7 @@ const Skills = () => {
         <>
         <TitleWrap>
             <Img src={Baby} />
-            <Title>WEB DEVELOPMENT SKILLS</Title>
+            <Title>SKILLS</Title>
         </TitleWrap>
         <Wrap>
             <SkillBox>

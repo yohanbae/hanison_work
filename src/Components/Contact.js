@@ -94,7 +94,7 @@ const Contact = () => {
         setIsProcessing(true);
         const emailRegex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
         if(!emailRegex.test(email)) {
-            toast.error('Enter email correctly!', {
+            toast.error('please enter information correctly', {
                 position: "bottom-left",
                 autoClose: 5000,
             });
@@ -102,7 +102,7 @@ const Contact = () => {
             return;
         }
         if(emailText === ""){
-            toast.error('Please enter something', {
+            toast.error('please enter information correctly', {
                 position: "bottom-left",
                 autoClose: 5000,
             });
@@ -125,7 +125,7 @@ const Contact = () => {
                 setIsProcessing(false);
                 setEmail("");
                 setEmailText("");
-                toast.success('Thank you for your letter!', {
+                toast.success('Thank you for your letter', {
                     position: "bottom-left",
                     autoClose: 5000,
                 });     
