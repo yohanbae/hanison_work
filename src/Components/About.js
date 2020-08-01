@@ -28,7 +28,7 @@ const AboutPara = styled.div`
     margin:0;
     display:grid;
     align-items: center;
-    font-size:16px;
+    font-size:20px;
 `;
 const About = () => {
 
@@ -39,9 +39,10 @@ const About = () => {
             </AboutImgWrap>
             <AboutPara>
                 <div>
-                Hello. My name is Yohan Bae. I am a web developer graduated from Ryerson University. After graduation, I worked in the media department of an organization IACD for 5 years. While I was there, I also worked as a freelancer developer. I am also a traveler that visited 10 countries past 7 years.
+                I'm a Front-End Developer. I'm interested to develop a app that is enjoyable, easy, and beneficial to the users.
+                {/* Hello. My name is Yohan Bae. I am a web developer graduated from Ryerson University. After graduation, I worked in the media department of an organization IACD for 5 years. While I was there, I also worked as a freelancer developer. I am also a traveler that visited 10 countries past 7 years.
                 <br /><br />
-                Now I'm looking forward to getting a full-time web developer position. I'm a very open-minded person with everyone as I traveled the world, and the attitude is the most value that I believe in. Please see my skills below and my works on next page.
+                Now I'm looking forward to getting a full-time web developer position. I'm a very open-minded person with everyone as I traveled the world, and the attitude is the most value that I believe in. Please see my skills below and my works on next page. */}
                 </div>
             </AboutPara>
         </Wrap>
