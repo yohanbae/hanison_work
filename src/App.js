@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import Main from "./Components/Main";
+import New from "./Components/New";
 
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -8,7 +9,7 @@ import 'react-toastify/dist/ReactToastify.css';
 function App() {
   return (
       <>
-        <Main />
+        <New />
         <ToastContainer
           position="bottom-left"
           autoClose={5000}

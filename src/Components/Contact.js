@@ -4,7 +4,7 @@ import { toast } from 'react-toastify';
 
 import emailjs from "emailjs-com";
 import Baby from "../assets/image/ori.png";
-
+import Dang_front from "../images/dang_front.png";
 
 const TitleWrap = styled.div`
     display:grid;
@@ -141,25 +141,27 @@ const Contact = () => {
 
 
     return (
-        <div>
-            <TitleWrap>
-                <Img src={Baby} />
-                <Title>CONTACT</Title>
-            </TitleWrap>            
-            <Wrap>
+
+        <div class="contact">
+            <div class="title">
                 <div>
-                <Input type="email" onChange={handleEmail} value={email} placeholder="What's your Email address?" />
-                <Textarea onChange={handleEmailText} value={emailText} placeholder='Please leave me a message if you want to work with me!'></Textarea>
-                <ButtonWrap>
-                    <Button onClick={() => onSend()}>
-                        {
-                            isProcessing ? "WORKING" : "SEND"
-                        }
-                    </Button>
-                </ButtonWrap>
+                    <h1>Contact</h1>
+                    <h5>Please send me a message if you interested to working with me</h5>
                 </div>
-            </Wrap>
+                <div style={{textAlign:'center'}}>
+                    <img src={Dang_front} />
+                </div>
+            </div>
+            <input type="text" class="email" onChange={handleEmail} value={email} placeholder="Email Address" />
+            <textarea class="email-msg" onChange={handleEmailText} value={emailText} placeholder="Type your message here"></textarea>
+            <button class="contact-button" onClick={() => onSend()}>
+                {
+                    isProcessing ? "Working" : "Send"
+                }
+
+            </button>
         </div>
+
     )
 }
 export default Contact;
