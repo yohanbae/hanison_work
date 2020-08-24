@@ -27,7 +27,7 @@ const New = () => {
     const onPromiseWeb = () => window.open('https://promisehani.netlify.app/')
 
     const onSodasuGit = () => window.open('https://github.com/yohanbae/sodasu')
-    const onSodasuWeb = () => window.open('"https://sodasu.netlify.app/')
+    const onSodasuWeb = () => window.open('https://sodasu.netlify.app/')
 
     const onSonmoa = () => window.open('https://github.com/yohanbae/sonmoa')
 
