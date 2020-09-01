@@ -6,6 +6,8 @@ import smileland_mock from "../images/smileland-mock.png";
 import smileheroes_mock from "../images/smileheroes-mock.png";
 import sodasu_mock from "../images/sodasu-mock.png";
 import sonmoa_mock from "../images/sonmoa-mock.png";
+import wp_mock from "../images/wp-mock.png";
+
 import Contact from "../Components/Contact";
 
 import { DiIonic, DiFirebase, DiMongodb, DiPhotoshop, DiIllustrator } from "react-icons/di";
@@ -25,6 +27,8 @@ const New = () => {
 
     const onPromiseGit = () => window.open('https://github.com/yohanbae/reactpromise')
     const onPromiseWeb = () => window.open('https://promisehani.netlify.app/')
+
+    const onWord = () => window.open('https://dev-wport.pantheonsite.io/')
 
     const onSodasuGit = () => window.open('https://github.com/yohanbae/sodasu')
     const onSodasuWeb = () => window.open('https://sodasu.netlify.app/')
@@ -164,7 +168,7 @@ const New = () => {
                 </div>
                 <div class="link" onClick={() => onSmilelandMApk()}>
                     <i class="far fa-circle" style={{fontSize:'8px', marginRight:'5px'}}></i>
-                    Website
+                    Download Apk
                 </div>
             </div>
         </div>
@@ -221,6 +225,30 @@ const New = () => {
                 </div>
             </div>
         </div>
+
+        <div class="item">
+            <img src={wp_mock} />
+            <div>
+                <h1>Wordpress Demonstration</h1>
+                {/* <h5>practice your smile</h5> */}
+                <p>
+                    A mock project to demonstrate the wordpress skills. A custom template and queries.
+                </p>
+                
+                <div class="skills">
+                    <i class="fab fa-wordpress-simple"></i>
+                    <i class="fab fa-html5"></i>
+                    <i class="fab fa-css3-alt"></i>
+                    <i class="fab fa-js"></i>
+                </div>
+                <div class="link" onClick={() => onWord()}>
+                    <i class="far fa-circle" style={{fontSize:'8px', marginRight:'5px'}}></i>
+                    Website
+                </div>
+
+            </div>
+        </div>
+
 
     </div>
 
